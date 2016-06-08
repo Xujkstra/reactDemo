@@ -1,0 +1,55 @@
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+header {
+  background: #000; }
+  header nav {
+    padding: 20px 0;
+    overflow: hidden; }
+    header nav ul {
+      float: left;
+      padding-left: 20px;
+      overflow: hidden; }
+      header nav ul li {
+        float: left;
+        padding: 5px 20px;
+        color: #fff; }
+    header nav .userInfo {
+      color: #fff;
+      float: right;
+      padding: 5px 10px; }
+      header nav .userInfo span {
+        cursor: pointer; }
+      header nav .userInfo span:hover {
+        text-decoration: underline; }
+
+.grid {
+  overflow: hidden; }
+  .grid .grid-1-2 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #000; }
+
+footer {
+  background-color: #000;
+  color: #fff; }
+  footer > ul {
+    overflow: hidden; }
+    footer > ul > li {
+      padding-top: 20px;
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      box-sizing: border-box; }
+      footer > ul > li ul li {
+        padding: 10px; }
+  footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
