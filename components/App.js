@@ -10,8 +10,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<p>This is a react && react-router && redux sample</p>
-				<Add result = {result} actions = {actions}/>
-				<Shop />
+				{this.props.children}
 			</div>
 			)
 	}

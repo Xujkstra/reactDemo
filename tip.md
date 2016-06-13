@@ -6,10 +6,13 @@
 	<App />
 </Provide>
 ```
-通过mapStateToProps(state) mapDispatchToProps(dispatch) 和connect给Dumb Component传递props.
+通过mapStateToProps(state) mapDispatchToProps(dispatch) 和connect给Dumb Component传递props.（可以在Provider下面任意组件使用）
 
 父组件将获取到的props传递给子组件
 
 通过调用action改变state
 
 不要乱改state的属性名
+
+react-router 组件嵌套时，传递 prop 的方法？
+
