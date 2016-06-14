@@ -5,6 +5,10 @@ import {Provider} from 'react-redux'
 import Shopping from './reducer'
 import * as action from './action'
 import { Router, Route, browserHistory,IndexRoute } from 'react-router'
+<<<<<<< HEAD
+=======
+let store = createStore(Shopping)
+>>>>>>> 203a392dd864dc5edae3247a6e2826581dfdf16a
 import App from './components/App.js'
 import Add from './components/Add/Add'
 import Shop from './components/Shop/Shop'

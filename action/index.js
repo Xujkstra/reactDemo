@@ -9,3 +9,10 @@ export function MINUS(){
 		type: 'MINUS'
 	}
 }
+
+export function SHOP(productID){
+	return {
+		type: 'SHOP',
+		productID
+	}
+}

@@ -1,10 +1,11 @@
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
+
 import * as actions from '../action'
 import Add from './Add/Add'
 import Shop from './Shop/Shop'
-class App extends React.Component {
+export default class App extends React.Component {
 	render(){
 		const {result,actions} = this.props
 		return (
@@ -15,20 +16,3 @@ class App extends React.Component {
 			)
 	}
 }
-
-function mapStateToProps(state){
-	return{
-		result: state.result
-	}
-}
-
-function mapDispatchToProps(dispatch){
-	return {
-		actions: bindActionCreators(actions, dispatch)
-	}
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(App)

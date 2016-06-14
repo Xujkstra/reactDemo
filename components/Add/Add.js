@@ -1,14 +1,24 @@
 import React from 'react'
+
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import * as actions from '../../action'
-export default class Add extends React.Component {
+
+
+import * as actions from '../../action'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import {Link} from'react-router'
+class AddContainer extends React.Component {
+
 	render(){
+		const {result,actions} = this.props
 		return(
 			<div className='Add'>
-				<button  >+</button>
-				<button  >-</button>
-				<p>Result:</p>
+				<Link to='/shop'>Go To Shop.</Link><br />
+				<button  onClick={actions.ADD}>+</button>
+				<button  onClick={actions.MINUS}>-</button>
+				<p>Result:{result}</p>
 			</div>
 			)
 	}
@@ -30,3 +40,23 @@ export default class Add extends React.Component {
 // 	mapStateToProps,
 // 	mapDispatchToProps
 // })(Add)
+
+function mapStateToProps(state){
+	return {
+		result: state.result
+	}
+}
+
+function mapDispatchToProps(dispatch){
+	return {
+		actions: bindActionCreators(actions, dispatch)
+	}
+}
+
+const Add = connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(AddContainer)
+
+export default Add
+
