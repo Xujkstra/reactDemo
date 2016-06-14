@@ -4,7 +4,7 @@ import { createStore } from 'redux'
 import {Provider} from 'react-redux'
 import Shopping from './reducer'
 import * as action from './action'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, browserHistory,IndexRoute } from 'react-router'
 let store = createStore(Shopping)
 import App from './components/App.js'
 import Add from './components/Add/Add'
@@ -14,7 +14,7 @@ render(
 	<Provider store={store}>
 		<Router history={browserHistory}>
 			<Router path = '/' component={App}>
-				<Route path ='/add' component={Add} />
+				<IndexRoute component={Add} />
 				<Route path = '/shop' component = {Shop} />
 			</Router>
 		</Router>

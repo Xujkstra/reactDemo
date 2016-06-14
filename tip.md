@@ -16,3 +16,7 @@
 
 react-router 组件嵌套时，传递 prop 的方法？
 
+added : [0,1,2,3,4,5,6,7,8,9]  ....已添加ID,从added里面判断商品是否已经添加
+
+深层更新操作: react-addons-update  update方法进行操作
+
